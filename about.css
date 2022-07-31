@@ -1,0 +1,294 @@
+body {
+    background-image: linear-gradient(-45deg, #F5A741, #F4CF74 );
+    background-repeat: no-repeat;
+    min-width: 100% ;
+    min-height: 100vh;
+    display: inline-block;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color:rgba(255, 255, 255, 0);
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+  
+label.logo {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+  
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+  
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 50px;
+}
+  
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 15px;
+}
+  
+a.active, a:hover {
+    color: rgb(255, 255, 255);
+    background: #ffffff25;
+    transition: .5s;
+    border-radius: 15px;
+}
+  
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+  
+#check {
+    display: none;
+}
+  
+@media (max-width:925px) {
+    label.logo{
+      font-size: 20px;
+      padding-left: 50px;
+      
+    }
+}
+  
+@media (max-width:858px) {
+    
+  .checkbtn {
+      display: block ;
+  }
+  
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(-45deg, #F5A741, #F4CF74 );
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 1;
+  }
+  
+    
+  nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+    
+  nav ul li a {
+      font-size: 18px;
+      padding: 7px 100px;
+      border-radius: 15px;
+  }
+  
+  #check:checked ~ ul {
+      left: 0;
+  }
+    
+   
+}
+
+@media (max-width:960px) {
+
+    .container-xxl {
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio {
+        margin-top: 45px!important;
+       
+    }
+
+    .bio2 {
+        margin-bottom: 45px!important;
+        
+       
+    }
+
+    .social {
+        text-decoration: none!important;
+        margin-left: 0px!important;
+      }
+
+      .connect {
+        width: 100%;
+      }
+    
+}
+
+.container-xxl {
+      margin-top: 75px;
+      min-height: 200px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-evenly;
+      
+}
+
+
+.container {
+    height: fit-content;
+    text-align: center;
+    border: 2px dotted rgba(57, 204, 69, 0);
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px #00000031;
+    padding:25px 25px ;
+    margin: 0px 20px;
+}
+
+
+.social:hover {
+    text-decoration: none;
+    background: none;
+    opacity: 50%;
+}
+  
+.social {
+    text-decoration: none!important;
+    margin-left: 45px;
+}
+
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px #00000031;
+}
+
+ p {
+     text-align: left;
+     font-family: 'Playfair Display', serif;
+     font-size: 18px;
+     color: #191818;
+     line-height: 30px;
+     padding-bottom: 20px;
+ }
+
+.random {
+    line-height: 24px;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+h5 {
+    font-size: 21px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #191818;  
+    text-decoration: none;  
+}
+
+.resume {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #191818;  
+    text-decoration: none;  
+}
+
+.resume:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.img-thumbnail {
+    background: none;
+    border: none;
+}
+
+.connect{
+    background:none;
+    box-shadow: none;
+    text-align: center;     
+}
+
+.connect1{
+  background:none;
+  box-shadow: none;
+  text-align: left;
+  
+}
+  
+.foot {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #191818;  
+    font-weight: 400;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 0px; 
+}
+
+.bio {
+  text-align: left;
+}
+
+body {
+    animation: transition 0.75s;
+}
+  
+
+  
+ @keyframes transition {
+    from {
+      opacity: 0;
+      transform: rotateX (-10deg);
+      transform: translateY(-10px)
+
+    }
+  
+    to {
+      opacity: 1;
+      transform: rotateX (0deg);
+      transform: translateY(0px)
+  
+    }
+  }
+
+
