@@ -1,0 +1,514 @@
+html,body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+.herobox{
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+      
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    z-index: 99;
+}
+
+label.logo {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+    
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+    
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 50px;
+}
+    
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 15px;
+    
+}
+    
+a.active, a:hover {
+    color: rgb(255, 255, 255);
+    background: #ffffff25;
+    border-radius: 15px;
+    transition: .5s;
+}
+    
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+    
+#check {
+    display: none;
+}
+    
+ @media (max-width:960px) {
+      label.logo{
+        font-size: 20px;
+        padding-left: 50px;
+        
+      }
+      
+}
+    
+@media (max-width:960px) {
+    .checkbtn {
+        display: block ;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(180deg, #0C4CC1, #3299F7, #5FDFF1);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+      
+    nav ul li a {
+        font-size: 18px;
+        padding: 7px 100px;
+      border-radius: 15px;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.super {
+    min-height: 500px;
+    display: flex;
+    margin-top: 75px;
+    z-index: 1;
+    
+}
+
+.showbox0 {
+    background-color: rgba(255, 255, 255, 0.349);
+    box-shadow: 3px 3px 4px #00000031;
+    border-radius: 15px;  
+    min-height: 550px; 
+    margin-left: 10px;
+    
+}
+
+.mainchild {
+    margin-top: 45px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 45px;
+}
+
+.pad {
+    padding-left: 60px;
+}
+  
+p {
+     text-align: justify;
+     font-family: 'Playfair Display', serif;
+     font-size: 18px;
+     color: #212121;
+     line-height: 30px;
+     padding-top: 50px;
+     padding-bottom: 20px;
+     padding-left: 130px;
+     margin-right: 20px;
+}
+
+.more {
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+
+.link {
+    background-color: rgba(255, 255, 255, 0.349);
+    box-shadow: 3px 3px 4px #00000018;
+    border-radius: 5px; 
+    width: 150px;
+    height: 50px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.link:hover {
+    box-shadow: 3px 3px 4px #00000031;
+    width: 300px;
+    transition: 0.25s;
+   
+}
+
+a:hover {
+    text-decoration: none;
+    background: none;
+}
+
+.smallbox {
+    width: 600px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between!important;
+    
+}
+
+.line {
+    text-decoration: none;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.349);
+    box-shadow: 3px 3px 4px #00000031;
+    border-radius: 15px;  
+    width: 325px;
+    height: 260px;
+    text-align: right;
+}
+
+.box:hover {
+    opacity: 60%;
+}
+
+
+.work {
+    font-size: 32px;
+    padding-right: 25px;
+    padding-top: 30px;
+    letter-spacing:0.5px;
+    line-height: 35px;
+}
+
+.workbio {
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #212121;
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-right:10px
+}
+
+.work1 {
+    font-size: 32px;
+    padding-right: 25px;
+    padding-top: 50px;
+    letter-spacing:0.5px;
+    line-height: 35px;
+}
+
+.showbox{
+    background-image: linear-gradient(90deg, #0C4CC1, #3299F7, #5FDFF1);
+    background-repeat: no-repeat;
+    z-index: 1;
+    min-height: 1700px;
+    margin-top: 70px;
+    background-size: cover;
+    width: 100%;
+    border: .1px solid  #0C4CC1;
+    
+}
+
+.showbox1 {
+    background-color: rgba(255, 255, 255, 0.349);
+    box-shadow: 3px 3px 4px #00000031;
+    border-radius: 15px;  
+    overflow: auto;
+    white-space: nowrap;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container-xl {
+    margin-top: 75px;
+}
+
+.imgs {
+    margin-right: 100px;
+    box-shadow: 3px 3px 10px #0000006e;
+}
+
+.showmore {
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #00000031;
+    width: 200px;
+    height: 50px;
+    margin-top: 45px;
+    margin-left: auto;
+    
+}
+
+.showmore:hover {
+    width: 300px;
+    transition: 0.25s;
+}
+  
+.last {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly!important; 
+}
+  
+
+.connect{
+    background:none;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    
+    
+}
+  
+.connect1{
+  background:none;
+  box-shadow: none;
+  text-align: left;
+  width: 600px;
+  
+}
+
+
+.social:hover {
+    text-decoration: none;
+    background: none;
+    opacity: 50%;
+}
+  
+.social {
+    text-decoration: none!important;
+    margin-left: 45px;
+}
+
+.resume {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ffffff;  
+    text-decoration: none;  
+} 
+
+.resume:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+h4 {
+font-family: 'Playfair Display', serif;
+font-size: 21px;
+font-weight: 700;
+color: white;
+letter-spacing: 1px;
+}
+
+
+.sc {
+    color: white;
+}
+
+.sc {
+    padding-left: 0;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.mov {
+    margin-right: 100px;
+}
+
+@media (max-width:960px) {
+
+     .super {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mainchild {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .smallbox {
+        display: none;
+    }
+
+    p {
+    padding-left: 0px!important;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .last {
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+    }
+      
+    
+      
+    .social {
+        text-decoration: none!important;
+        margin-left: 0px!important;
+    }
+      
+    .foot {
+       font-size: 12px!important;
+    }
+      
+    .super {
+        margin-top: 10px!important;
+    }
+
+    .connect {
+        margin-top: 45px;
+        width: 100%;
+    }
+
+    .connect1 {
+        width: 100%;
+    }
+
+    .name {
+        margin-top: 20px;
+    }
+    
+    .showbox0 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 5px;
+
+    }
+
+
+}
+
+
+
+.foot {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #ffffff; 
+    font-weight: 400;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    margin-top: 45px;
+}
+
+ .super{
+    animation: transition 0.75s;
+}
+  
+
+  
+ @keyframes transition {
+    from {
+      opacity: 0;
+      transform: rotateX (-10deg);
+      transform: translateY(-10px)
+
+    }
+  
+    to {
+      opacity: 1;
+      transform: rotateX (0deg);
+      transform: translateY(0px)
+  
+    }
+  }
+
+
+   
